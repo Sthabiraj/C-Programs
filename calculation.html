@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculation</title>
+  </head>
+  <body>
+    <h1>WAP to print sum, product and difference of two numbers using JS</h1>
+    <input type="text" id="num1" />
+    <input type="text" id="num2" />
+    <input type="button" value="Calculate" onclick="calculate()" />
+    <div id="sum"></div>
+    <div id="product"></div>
+    <div id="difference"></div>
+    <script>
+      function calculate() {
+        var a = document.getElementById("num1").value;
+        var b = document.getElementById("num2").value;
+        var sum = parseInt(a) + parseInt(b);
+        var product = parseInt(a) * parseInt(b);
+        var difference = parseInt(a) - parseInt(b);
+        document.getElementById("sum").innerHTML = "Sum is " + sum;
+        document.getElementById("product").innerHTML = "Product is " + product;
+        document.getElementById("difference").innerHTML =
+          "Difference is " + difference;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Sum of 2 numbers</title>
+  </head>
+  <body>
+    <h1>Sum of 2 numbers</h1>
+    <input type="text" id="num1" /><br /><br />
+    <input type="text" id="num2" /><br /><br />
+    <input type="button" value="Sum" onclick="sum()" /><br /><br />
+    <div id="result"></div>
+    <script>
+      function sum() {
+        var a = document.getElementById("num1").value;
+        var b = document.getElementById("num2").value;
+        var c = parseInt(a) + parseInt(b);
+        document.getElementById("result").innerHTML = "Sum is " + c;
+      }
+    </script>
+  </body>
+</html>

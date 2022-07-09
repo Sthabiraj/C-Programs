@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File validation</title>
+  </head>
+  <body>
+    <h1>Login / Sign in</h1>
+    <div>Username: <input type="text" id="username" /></div>
+    <div>Password: <input type="password" id="password" /></div>
+    <div><input type="submit" value="login" onclick="valid()" /></div>
+    <div id="result"></div>
+    <script>
+      function valid() {
+        var a = document.getElementById("username").value;
+        var b = document.getElementById("password").value;
+        if (a == "" || b == "") {
+          alert("Please fill both boxes!!");
+        } else {
+          document.getElementById("result").innerHTML =
+            "Form submitted sucessfully...";
+        }
+      }
+    </script>
+  </body>
+</html>
